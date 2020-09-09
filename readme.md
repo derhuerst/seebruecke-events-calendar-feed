@@ -7,6 +7,9 @@
 [![chat with me on Gitter](https://img.shields.io/badge/chat%20with%20me-on%20gitter-512e92.svg)](https://gitter.im/derhuerst)
 [![support me via GitHub Sponsors](https://img.shields.io/badge/support%20me-donate-fa7664.svg)](https://github.com/sponsors/derhuerst)
 
+- feed for all cities: [`https://seebrucke-events-calendar-feed.vercel.app/api/feed`](https://seebrucke-events-calendar-feed.vercel.app/api/feed).
+- feed for a specific city, e.g. Berlin: [`https://seebrucke-events-calendar-feed.vercel.app/api/feed?city=berlin`](https://seebrucke-events-calendar-feed.vercel.app/api/feed?city=berlin).
+
 
 ## Contributing
 
