@@ -21,6 +21,8 @@
 	},
 	"dependencies": {
 		"cheerio": "^1.0.0-rc.3",
+		"connect": "^3.7.0",
+		"ics-service": "^1.2.0",
 		"node-fetch": "^2.6.1",
 		"slug": "^3.3.4"
 	},
