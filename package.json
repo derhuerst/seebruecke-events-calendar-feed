@@ -1,0 +1,32 @@
+{
+	"private": true,
+	"name": "seebrucke-events-calendar-feed",
+	"description": "A calendar feed for Seebrücke events.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"keywords": [
+		"seebruecke",
+		"seebrücke",
+		"demonstration",
+		"protest",
+		"refugees"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/seebrucke-events-calendar-feed",
+	"repository": "derhuerst/seebrucke-events-calendar-feed",
+	"bugs": "https://github.com/derhuerst/seebrucke-events-calendar-feed/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=12"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"eslint": "^7.3.0"
+	},
+	"scripts": {
+		"test": "node test.js",
+		"lint": "eslint .",
+		"prepublishOnly": "npm test && npm run lint"
+	}
+}
