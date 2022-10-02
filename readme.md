@@ -2,10 +2,9 @@
 
 **A calendar feed for [Seebrücke events](https://seebruecke.org/mach-mit/aktionen/).**
 
-[![build status](https://api.travis-ci.org/derhuerst/seebruecke-events-calendar-feed.svg?branch=master)](https://travis-ci.org/derhuerst/seebruecke-events-calendar-feed)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/seebruecke-events-calendar-feed.svg)
-[![chat with me on Gitter](https://img.shields.io/badge/chat%20with%20me-on%20gitter-512e92.svg)](https://gitter.im/derhuerst)
 [![support me via GitHub Sponsors](https://img.shields.io/badge/support%20me-donate-fa7664.svg)](https://github.com/sponsors/derhuerst)
+[![chat with me on Twitter](https://img.shields.io/badge/chat%20with%20me-on%20Twitter-1da1f2.svg)](https://twitter.com/derhuerst)
 
 - feed for all cities: [`https://seebrucke-events-calendar-feed.vercel.app/api/feed`](https://seebrucke-events-calendar-feed.vercel.app/api/feed).
 - feed for a specific city, e.g. Berlin: [`https://seebrucke-events-calendar-feed.vercel.app/api/feed?city=berlin`](https://seebrucke-events-calendar-feed.vercel.app/api/feed?city=berlin).
