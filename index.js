@@ -1,9 +1,7 @@
-'use strict'
-
-const connect = require('connect')
-const {createServer} = require('http')
-const about = require('./api')
-const feed = require('./api/feed')
+import connect from 'connect'
+import {createServer} from 'http'
+import {route as about} from './api/index.js'
+import {route as feed} from './api/feed.js'
 
 const app = connect()
 

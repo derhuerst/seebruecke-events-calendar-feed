@@ -1,7 +1,5 @@
-'use strict'
-
-const generateIcs = require('ics-service/generate-ics')
-const fetchEvents = require('./lib/events')
+import generateIcs from 'ics-service/generate-ics.js'
+import {fetchEvents} from './lib/events.js'
 
 const TITLE = 'Aktionen der Seebrücke'
 
@@ -13,4 +11,6 @@ const getSeebrueckeEventsIcs = async (feedUrl, req) => {
 	return generateIcs(TITLE, events, feedUrl)
 }
 
-module.exports = getSeebrueckeEventsIcs
+export {
+	getSeebrueckeEventsIcs as getIcs,
+}

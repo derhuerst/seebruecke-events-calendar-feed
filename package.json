@@ -3,6 +3,7 @@
 	"name": "seebrucke-events-calendar-feed",
 	"description": "A calendar feed for Seebrücke events.",
 	"version": "1.0.0",
+	"type": "module",
 	"main": "index.js",
 	"keywords": [
 		"seebruecke",
@@ -23,7 +24,7 @@
 		"cheerio": "^1.0.0-rc.3",
 		"connect": "^3.7.0",
 		"ics-service": "^1.2.0",
-		"node-fetch": "^2.6.1",
+		"node-fetch": "^3.2.10",
 		"slug": "^8.2.2"
 	},
 	"devDependencies": {

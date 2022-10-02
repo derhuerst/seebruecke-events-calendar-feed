@@ -1,6 +1,8 @@
-'use strict'
+import createFeedRoute from 'ics-service/feed.js'
+import {getIcs} from '../ics.js'
 
-const feedRoute = require('ics-service/feed')
-const getIcs = require('../ics')
+const feedRoute = createFeedRoute(getIcs)
 
-module.exports = feedRoute(getIcs)
+export {
+	feedRoute as route,
+}
