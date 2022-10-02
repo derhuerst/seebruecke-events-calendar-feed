@@ -21,6 +21,7 @@
 		"node": ">=16"
 	},
 	"dependencies": {
+		"@turf/invariant": "^6.5.0",
 		"cheerio": "^1.0.0-rc.3",
 		"connect": "^3.7.0",
 		"ics-service": "^1.2.0",
