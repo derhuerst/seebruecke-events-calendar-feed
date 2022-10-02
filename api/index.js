@@ -8,3 +8,4 @@ const aboutRoute = createAboutRoute(
 export {
 	aboutRoute as route,
 }
+export default aboutRoute

@@ -3,6 +3,7 @@ import {getIcs} from '../ics.js'
 
 const feedRoute = createFeedRoute(getIcs)
 
-export {
+export{
 	feedRoute as route,
 }
+export default feedRoute
