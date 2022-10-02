@@ -17,17 +17,17 @@
 	"bugs": "https://github.com/derhuerst/seebrucke-events-calendar-feed/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=12"
+		"node": ">=16"
 	},
 	"dependencies": {
 		"cheerio": "^1.0.0-rc.3",
 		"connect": "^3.7.0",
 		"ics-service": "^1.2.0",
 		"node-fetch": "^2.6.1",
-		"slug": "^3.3.4"
+		"slug": "^8.2.2"
 	},
 	"devDependencies": {
-		"eslint": "^7.3.0"
+		"eslint": "^8.24.0"
 	},
 	"scripts": {
 		"test": "node test.js",
