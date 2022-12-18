@@ -21,11 +21,10 @@
 		"node": ">=16"
 	},
 	"dependencies": {
-		"@turf/invariant": "^6.5.0",
-		"cheerio": "^1.0.0-rc.3",
 		"connect": "^3.7.0",
 		"debug": "^4.3.4",
 		"ics-service": "^1.2.0",
+		"luxon": "^3.1.1",
 		"node-fetch": "^3.2.10",
 		"slug": "^8.2.2"
 	},
