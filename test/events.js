@@ -7,235 +7,241 @@ import {
 	fetchEvents,
 } from '../lib/events.js'
 
-const ORGANIZER = {
-	name: 'Seebrücke',
-	email: 'press@seebruecke.org',
-}
-
 const runTests = async () => {
 	deepStrictEqual(parseAction({
-		id: '730',
-		title: 'NASIM - Filmvorführung und Gespräch mit Nasim Tajik und den Filmemachern',
-		intro: null,
-		slug: 'nasim-filmvorfuehrung-und-gespraech-mit-nasim-tajik-und-den-filmemachern',
-		location: 'Potsdam',
-		location_detail: 'Spartacus (Friedrich-Engels-Straße 22)',
-		__typename: 'Action',
-		start: '02.10.2022 16:00',
-		end: '02.10.2022 19:10',
-		coordinates: {
-			type: 'Feature',
-			properties: {},
-			geometry: {
-				type: 'Point',
-				coordinates: [13.058302574107293, 52.3943522658368],
-			},
-		},
-	}), {
-		uid: '730',
-		title: 'NASIM - Filmvorführung und Gespräch mit Nasim Tajik und den Filmemachern – Seebrücke',
-		url: 'https://seebruecke.org/aktionen/nasim-filmvorfuehrung-und-gespraech-mit-nasim-tajik-und-den-filmemachern',
-		location: 'Spartacus (Friedrich-Engels-Straße 22), Potsdam',
-		geo: {lat: 52.3943522658368, lon: 13.058302574107293, radius: 100},
-		organizer: ORGANIZER,
-		start: [2022, 10, 2, 16, 0],
-		startInputType: 'local',
-		startOutputType: 'local',
-		end: [2022, 10, 2, 19, 10],
-		duration: null,
-	}, '730')
-
-	deepStrictEqual(parseAction({
-		id: '763',
-		title: 'Podiumsdiskussion: Flucht und Rassismus - Die selektive Solidarität gegenüber Schutzsuchenden',
-		intro: null,
-		slug: 'podiumsdiskussion-flucht-und-rassismus-die-selektive-solidaritaet-gegenueber-schutzsuchenden',
-		location: 'Berlin',
-		location_detail: 'KulturMarktHalle, Hanns-Eisler Str. 93',
-		__typename: 'Action',
-		start: '03.10.2022 17:00',
-		end: null,
-		coordinates: {
-			type: 'Feature',
-			properties: {},
-			geometry: {
-				type: 'Point',
-				coordinates: [13.452408714689394, 52.53992756081701],
-			},
-		},
-	}), {
-		uid: '763',
-		title: 'Podiumsdiskussion: Flucht und Rassismus - Die selektive Solidarität gegenüber Schutzsuchenden – Seebrücke',
-		url: 'https://seebruecke.org/aktionen/podiumsdiskussion-flucht-und-rassismus-die-selektive-solidaritaet-gegenueber-schutzsuchenden',
-		location: 'KulturMarktHalle, Hanns-Eisler Str. 93, Berlin',
-		geo: {lat: 52.53992756081701, lon: 13.452408714689394, radius: 100},
-		organizer: ORGANIZER,
-		start: [2022, 10, 3, 17, 0],
-		startInputType: 'local',
-		startOutputType: 'local',
-		end: null,
-		duration: {hours: 3, minutes: 0},
-	}, '763')
-
-	deepStrictEqual(parseAction({
-		id: '743',
-		title: 'Aktiv werden gegen Abschiebungen!',
-		intro: null,
-		slug: 'aktiv-werden-gegen-abschiebungen',
+		id: '841',
+		slug: 'reclaim-the-hinterland',
+		updated_at: '2022-12-15T15:05:33.000Z',
+		locale: 'de',
+		title: 'Reclaim the Hinterland!',
+		start: '2023-01-27T17:00:00.000Z',
+		end: '2023-01-27T19:00:00.000Z',
 		location: 'Hannover',
-		location_detail: null,
-		__typename: 'Action',
-		start: '04.10.2022 12:00',
-		end: null,
-		coordinates: {
-			type: 'Feature',
-			properties: {},
-			geometry: {
-				type: 'Point',
-				coordinates: [9.740862653907028, 52.37706865864021],
+		location_detail: 'Bahnhof Lindhorst',
+		coordinates: '52.354489830158954, 9.288939803651777',
+		link: null,
+		group: {
+			localizations: [{
+				content: [
+					{},
+					{
+						__typename: 'ComponentSharedBlocksContact',
+						email: 'hannover@seebruecke.org'
+					},
+					{},
+					{},
+				],
+			}],
+			city: {
+				name: 'Hannover',
+				slug: 'hannover',
+				federal_country: {slug: 'niedersachsen', country: {slug: 'deutschland'}},
 			},
 		},
 	}), {
-		uid: '743',
-		title: 'Aktiv werden gegen Abschiebungen! – Seebrücke',
-		url: 'https://seebruecke.org/aktionen/aktiv-werden-gegen-abschiebungen',
-		location: 'Hannover',
-		geo: {lat: 52.37706865864021, lon: 9.740862653907028, radius: 100},
-		organizer: ORGANIZER,
-		start: [2022, 10, 4, 12, 0],
+		uid: '841',
+		title: 'Reclaim the Hinterland! – Seebrücke Hannover',
+		url: 'https://seebruecke.org/aktionen/reclaim-the-hinterland',
+		location: 'Bahnhof Lindhorst, Hannover',
+		geo: {lat: 52.354489830158954, lon: 9.288939803651777, radius: 100},
+		organizer: {
+			name: 'Seebrücke Hannover',
+			email: 'hannover@seebruecke.org',
+			dir: 'https://seebruecke.org/mach-mit/deutschland/niedersachsen/hannover'
+		},
+		start: [2023, 1, 27, 18, 0],
 		startInputType: 'local',
 		startOutputType: 'local',
-		end: null,
-		duration: {hours: 3, minutes: 0},
-	}, '743')
+		end: [2023, 1, 27, 20, 0],
+	})
 
 	deepStrictEqual(parseAction({
-		id: '754',
-		title: 'Solifestival',
-		intro: null,
-		slug: 'solifestival',
-		location: 'Ahaus',
-		location_detail: 'LOGO',
-		__typename: 'Action',
-		start: '07.10.2022 19:30',
-		end: null,
-		coordinates: {
-			type: 'Feature',
-			properties: {},
-			geometry: {
-				type: 'Point',
-				coordinates: [6.9829535099744, 52.106570335160626],
+		id: '842',
+		slug: 'bamberger-mahnwache-asyl-am-montag',
+		updated_at: '2022-12-15T15:06:55.000Z',
+		locale: 'de',
+		title: 'Bamberger Mahnwache Asyl am Montag',
+		start: '2022-12-19T17:00:00.000Z',
+		end: '2022-12-19T19:00:00.000Z',
+		location: 'Bamberg',
+		location_detail: 'Untere Brücke',
+		coordinates: '49.892134904541244, 10.886452098915472',
+		link: null,
+		group: {
+			localizations: [{
+				content: [
+					{},
+					{
+						__typename: 'ComponentSharedBlocksContact',
+						email: 'bamberg@seebruecke.org'
+					},
+					{},
+				],
+			}],
+			city: {
+				name: 'Bamberg',
+				slug: 'bamberg',
+				federal_country: {slug: 'bayern', country: {slug: 'deutschland'}},
 			},
 		},
 	}), {
-		uid: '754',
-		title: 'Solifestival – Seebrücke',
-		url: 'https://seebruecke.org/aktionen/solifestival',
-		location: 'LOGO, Ahaus',
-		geo: {lat: 52.106570335160626, lon: 6.9829535099744, radius: 100},
-		organizer: ORGANIZER,
-		start: [2022, 10, 7, 19, 30],
+		uid: '842',
+		title: 'Bamberger Mahnwache Asyl am Montag – Seebrücke Bamberg',
+		url: 'https://seebruecke.org/aktionen/bamberger-mahnwache-asyl-am-montag',
+		location: 'Untere Brücke, Bamberg',
+		geo: {lat: 49.892134904541244, lon: 10.886452098915472, radius: 100},
+		organizer: {
+			name: 'Seebrücke Bamberg',
+			email: 'bamberg@seebruecke.org',
+			dir: 'https://seebruecke.org/mach-mit/deutschland/bayern/bamberg'
+		},
+		start: [2022, 12, 19, 18, 0],
 		startInputType: 'local',
 		startOutputType: 'local',
-		end: null,
-		duration: {hours: 3, minutes: 0},
-	}, '754')
+		end: [2022, 12, 19, 20, 0],
+	})
 
 	deepStrictEqual(parseAction({
-		id: '770',
-		title: 'Offenes Treffen',
-		intro: null,
-		slug: 'offenes-treffen-7',
-		location: 'Montabaur',
-		location_detail: 'Haus der Jugend ',
-		__typename: 'Action',
-		start: '18.10.2022 18:30',
-		end: null,
-		coordinates: {
-			type: 'Feature',
-			properties: {},
-			geometry: {
-				type: 'Point',
-				coordinates: [7.808712676128776, 50.43460641363568],
+		id: '840',
+		slug: 'flohmarktkneipe',
+		updated_at: '2022-12-15T15:03:06.000Z',
+		locale: 'de',
+		title: 'Flohmarktkneipe',
+		start: '2022-12-17T19:00:00.000Z',
+		end: '2022-12-17T22:30:00.000Z',
+		location: 'Lüneburg ',
+		location_detail: 'Anna & Arthur, Katzenstraße 2',
+		coordinates: '53.2490433641608, 10.406656725189475',
+		link: null,
+		group: {
+			localizations: [
+				{
+					content: [
+						{},
+						{
+							__typename: 'ComponentSharedBlocksContact',
+							email: 'Lueneburg@seebruecke.org'
+						},
+						{},
+						{},
+					],
+				},
+			],
+			city: {
+				name: 'Lüneburg',
+				slug: 'lueneburg',
+				federal_country: {slug: 'niedersachsen', country: {slug: 'deutschland'}},
 			},
 		},
 	}), {
-		uid: '770',
-		title: 'Offenes Treffen – Seebrücke',
-		url: 'https://seebruecke.org/aktionen/offenes-treffen-7',
-		location: 'Haus der Jugend , Montabaur',
-		geo: {lat: 50.43460641363568, lon: 7.808712676128776, radius: 100},
-		organizer: ORGANIZER,
-		start: [2022, 10, 18, 18, 30],
+		uid: '840',
+		title: 'Flohmarktkneipe – Seebrücke Lüneburg',
+		url: 'https://seebruecke.org/aktionen/flohmarktkneipe',
+		location: 'Anna & Arthur, Katzenstraße 2, Lüneburg ',
+		geo: {lat: 53.2490433641608, lon: 10.406656725189475, radius: 100},
+		organizer: {
+			name: 'Seebrücke Lüneburg',
+			email: 'Lueneburg@seebruecke.org',
+			dir: 'https://seebruecke.org/mach-mit/deutschland/niedersachsen/lueneburg'
+		},
+		start: [2022, 12, 17, 20, 0],
 		startInputType: 'local',
 		startOutputType: 'local',
-		end: null,
-		duration: {hours: 3, minutes: 0},
-	}, '770')
+		end: [2022, 12, 17, 23, 30],
+	})
 
 	deepStrictEqual(parseAction({
-		id: '765',
-		title: 'FIGHT FORTRESS EUROPE Tour: Film Screening, Berichte und Austausch',
-		intro: null,
-		slug: 'film-screening-berichte-und-austausch',
-		location: 'Würzburg',
-		location_detail: 'Central im Bürgerbräu',
-		__typename: 'Action',
-		start: '18.10.2022 18:30',
-		end: null,
-		coordinates: {
-			type: 'Feature',
-			properties: {},
-			geometry: {
-				type: 'Point',
-				coordinates: [9.944391876292755, 49.79527785832146],
+		id: '839',
+		slug: 'soli-siebdruck-werkstatt',
+		updated_at: '2022-12-15T15:00:41.000Z',
+		locale: 'de',
+		title: 'Soli-Siebdruck-Werkstatt',
+		start: '2022-12-17T18:00:00.000Z',
+		end: '2022-12-17T20:00:00.000Z',
+		location: 'Hamburg',
+		location_detail: 'Gängeviertel',
+		coordinates: '53.55545810534097, 9.983173319089355',
+		link: null,
+		group: {
+			localizations: [
+				{
+					content: [
+						{},
+						{
+							__typename: 'ComponentSharedBlocksContact',
+							email: 'hamburg@seebruecke.org'
+						},
+						{},
+					],
+				},
+			],
+			city: {
+				name: 'Hamburg',
+				slug: 'hamburg',
+				federal_country: {slug: 'hamburg', country: {slug: 'deutschland'}},
 			},
 		},
 	}), {
-		uid: '765',
-		title: 'FIGHT FORTRESS EUROPE Tour: Film Screening, Berichte und Austausch – Seebrücke',
-		url: 'https://seebruecke.org/aktionen/film-screening-berichte-und-austausch',
-		location: 'Central im Bürgerbräu, Würzburg',
-		geo: {lat: 49.79527785832146, lon: 9.944391876292755, radius: 100},
-		organizer: ORGANIZER,
-		start: [2022, 10, 18, 18, 30],
+		uid: '839',
+		title: 'Soli-Siebdruck-Werkstatt – Seebrücke Hamburg',
+		url: 'https://seebruecke.org/aktionen/soli-siebdruck-werkstatt',
+		location: 'Gängeviertel, Hamburg',
+		geo: {lat: 53.55545810534097, lon: 9.983173319089355, radius: 100},
+		organizer: {
+			name: 'Seebrücke Hamburg',
+			email: 'hamburg@seebruecke.org',
+			dir: 'https://seebruecke.org/mach-mit/deutschland/hamburg/hamburg'
+		},
+		start: [2022, 12, 17, 19, 0],
 		startInputType: 'local',
 		startOutputType: 'local',
-		end: null,
-		duration: {hours: 3, minutes: 0},
-	}, '765')
+		end: [2022, 12, 17, 21, 0],
+	})
 
 	deepStrictEqual(parseAction({
-		id: '744',
-		title: 'Vortrag und Podiumsdiskussion \'Frauen unter den Taliban: Ein Jahr nach der Machtergreifung\'',
-		intro: null,
-		slug: 'vortrag-und-podiumsdiskussion-frauen-unter-den-taliban-ein-jahr-nach-der-machtergreifung',
-		location: 'Hannover',
-		location_detail: 'Kulturzentrum Faust / Warenannahme, Zur Bettfedernfabrik 3',
-		__typename: 'Action',
-		start: '22.11.2022 17:30',
-		end: null,
-		coordinates: {
-			type: 'Feature',
-			properties: {},
-			geometry: {
-				type: 'Point',
-				coordinates: [9.732622907907697, 52.40304962186838],
+		id: '766',
+		slug: 'mittelmeer-monologe-2',
+		updated_at: '2022-09-26T11:10:32.000Z',
+		locale: 'de',
+		title: 'MITTELMEER-MONOLOGE',
+		start: '2022-12-17T17:30:00.000Z',
+		end: '2022-09-28T19:00:00.000Z',
+		location: 'Tübingen',
+		location_detail: 'Eberhardskirche',
+		coordinates: '48.530698986093164, 9.066999218416052',
+		link: null,
+		group: {
+			localizations: [
+				{
+					content: [
+						{},
+						{__typename: 'ComponentSharedBlocksContact', email: ''},
+						{},
+					],
+				},
+			],
+			city: {
+				name: 'Tübingen',
+				slug: 'tuebingen',
+				federal_country: {slug: 'baden-wuerttemberg', country: {slug: 'deutschland'}},
 			},
 		},
 	}), {
-		uid: '744',
-		title: 'Vortrag und Podiumsdiskussion \'Frauen unter den Taliban: Ein Jahr nach der Machtergreifung\' – Seebrücke',
-		url: 'https://seebruecke.org/aktionen/vortrag-und-podiumsdiskussion-frauen-unter-den-taliban-ein-jahr-nach-der-machtergreifung',
-		location: 'Kulturzentrum Faust / Warenannahme, Zur Bettfedernfabrik 3, Hannover',
-		geo: {lat: 52.40304962186838, lon: 9.732622907907697, radius: 100},
-		organizer: ORGANIZER,
-		start: [2022, 11, 22, 17, 30],
+		uid: '766',
+		title: 'MITTELMEER-MONOLOGE – Seebrücke Tübingen',
+		url: 'https://seebruecke.org/aktionen/mittelmeer-monologe-2',
+		location: 'Eberhardskirche, Tübingen',
+		geo: {lat: 48.530698986093164, lon: 9.066999218416052, radius: 100},
+		organizer: {
+			name: 'Seebrücke Tübingen',
+			email: 'press@seebruecke.org',
+			dir: 'https://seebruecke.org/mach-mit/deutschland/baden-wuerttemberg/tuebingen'
+		},
+		start: [2022, 12, 17, 18, 30],
 		startInputType: 'local',
 		startOutputType: 'local',
-		end: null,
-		duration: {hours: 3, minutes: 0},
-	}, '744')
+		end: [2022, 9, 28, 21, 0],
+	})
 
 
 	await new Promise((resolve, reject) => {
