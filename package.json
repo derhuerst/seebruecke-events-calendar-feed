@@ -26,7 +26,7 @@
 		"ics-service": "^1.4.0",
 		"luxon": "^3.1.1",
 		"node-fetch": "^3.2.10",
-		"slug": "^8.2.2"
+		"slug": "^11.0.0"
 	},
 	"devDependencies": {
 		"eslint": "^9.34.0"
