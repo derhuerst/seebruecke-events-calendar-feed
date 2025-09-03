@@ -29,7 +29,7 @@
 		"slug": "^8.2.2"
 	},
 	"devDependencies": {
-		"eslint": "^8.24.0"
+		"eslint": "^9.34.0"
 	},
 	"scripts": {
 		"test": "node test/index.js",
