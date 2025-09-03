@@ -32,7 +32,7 @@
 		"eslint": "^9.34.0"
 	},
 	"scripts": {
-		"test": "node test/index.js",
+		"test": "node --test test/index.js",
 		"lint": "eslint .",
 		"prepublishOnly": "npm test && npm run lint"
 	}
